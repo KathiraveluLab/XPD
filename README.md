@@ -28,5 +28,3 @@ from the directory of jikes rvm executable,
 
  ./rvm -jar xpdbench-1.0.0-jar-with-dependencies.jar
 
-## Documentation
-To view the complete information of the project, pls refer to the docs/ folder which further documentation and diagrams.
