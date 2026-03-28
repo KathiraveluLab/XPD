@@ -1,0 +1,53 @@
+<!--
+ ~ Copyright (c) 2013, Team XPD. All Rights Reserved.
+ ~
+ ~ tapEMDC team licenses this file to you under the Apache License,
+ ~ Version 2.0 (the "License"); you may not use this file except
+ ~ in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~
+ ~    http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing,
+ ~ software distributed under the License is distributed on an
+ ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ ~ KIND, either express or implied.  See the License for the
+ ~ specific language governing permissions and limitations
+ ~ under the License.
+ -->
+
+<!--
+    This is the configuration file for XPDBench parameters.
+-->
+
+<xpdbenchConfig xmlns="http://www.ist.utl.pt">
+
+    <!--Number of array elements. The benchmark contains a List
+    of double arrays. Here you are giving the number of elements.
+    For example, 1020 will initialize
+        bigArray = new double[1020][1020]
+    where the List contains 1020 such double array objects, as below.
+        for (int i = 0; i < 1020; i++) {
+            bigList.add(bigArray); Default = 1000
+    So the effect of increasing the size (n) here in the size of the
+    object is n^3.-->
+    <objectSize>1000</objectSize>
+
+    <!--Is Garbage Collection induced by the benchmark? 
+    Default is true. If set to false, the GC algorithm will take 
+    complete control on when to schedule collection.-->
+    <isGCInduced>true</isGCInduced>
+
+    <!--How many iteration the memory consuming method to be run.
+    Default is 10.-->
+    <iteration>15</iteration>
+
+    <!--How many threads should be used in the benchmarking program.
+    Default is 10.-->
+    <threadCount>10</threadCount>
+
+    <!--How long should each thread sleep after the memory consuming
+    method being invoked. Given in milliseconds. Default is 10-->
+    <sleepTime>10</sleepTime>
+
+</xpdbenchConfig>
