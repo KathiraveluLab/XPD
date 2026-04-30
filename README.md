@@ -1,7 +1,5 @@
-# XPD
-XPD, a Mark-Compact Collector algorithm implementation for MMTk.
-
-XPDBench is a micro-benchmark for the garbage collection algorithm implementations in java.
+# XPDBench
+XPD, a Mark-Compact Collector algorithm implementation for MMTk. XPDBench is a micro-benchmark for the garbage collection algorithm implementations in java.
 
 
 ## Building the Application
