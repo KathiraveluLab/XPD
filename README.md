@@ -5,26 +5,26 @@ XPDBench is a micro-benchmark for the garbage collection algorithm implementatio
 
 
 ## Building the Application
-The product can be built using Apache Maven2.
+The product can be built using Apache Maven.
 
-Build using,
-mvn clean install -Dmaven.test.skip=true from the root directory of xpdbench.
+Build using:
+```bash
+mvn clean package
+```
 
-The built jar with the dependencies can be found inside the target directory,
-xpdbench-1.0.0-jar-with-dependencies.jar
-
-Once built, copy the xpdbench.xml from the root directory, and place it with the built jar.
+The built jar with dependencies and the configuration file (`xpdbench.xml`) will be available in the `target` directory.
 
 ## Configuring and running the Application
-The application can be configured using the xpdbench.xml.
+The application can be configured using `xpdbench.xml`.
 
-Run using java,
+To run using Java:
+```bash
+java -jar target/xpdbench-1.0.0-jar-with-dependencies.jar
+```
 
- java -jar xpdbench-1.0.0-jar-with-dependencies.jar
-
-For jikes rvm,
-
-from the directory of jikes rvm executable, 
-
- ./rvm -jar xpdbench-1.0.0-jar-with-dependencies.jar
+For Jikes RVM:
+Replace `/path/to/rvm` with your actual Jikes RVM installation path:
+```bash
+/path/to/rvm/rvm -jar target/xpdbench-1.0.0-jar-with-dependencies.jar
+```
 
